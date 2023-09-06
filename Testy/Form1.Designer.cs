@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            AAA = new Button();
+            SuspendLayout();
+            // 
+            // AAA
+            // 
+            AAA.BackColor = SystemColors.MenuHighlight;
+            AAA.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            AAA.Location = new Point(304, 111);
+            AAA.Name = "AAA";
+            AAA.Size = new Size(189, 107);
+            AAA.TabIndex = 0;
+            AAA.Text = "button1";
+            AAA.UseVisualStyleBackColor = false;
+            AAA.Click += ButtonClicked;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(AAA);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
+        private Button Button;
+        private Button AAA;
     }
 }
