@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             AAA = new Button();
+            label1 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // AAA
@@ -41,17 +44,33 @@
             AAA.TabIndex = 0;
             AAA.Text = "button1";
             AAA.UseVisualStyleBackColor = false;
-            AAA.Click += ButtonClicked;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(28, 405);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 1;
+            label1.Text = "label1";
+
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(790, 450);
+            Controls.Add(label1);
             Controls.Add(AAA);
             Name = "Form1";
             Text = "Form1";
+
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -59,5 +78,7 @@
         private Button button1;
         private Button Button;
         private Button AAA;
+        private Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
